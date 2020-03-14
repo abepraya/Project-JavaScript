@@ -69,7 +69,7 @@ export const createCurrentBookTab = book => {
   frame.appendChild(content);
 
   updateButton.addEventListener('click', () => {
-    const error = book.readBook(+input.value);
+    const error = book.readBook(+input.value,book.pages);
     if (error === 0) {
       input.value = book.currentPage;
       alert('Invalid page number!');
