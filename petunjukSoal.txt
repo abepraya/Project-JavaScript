@@ -1,0 +1,26 @@
+Setelah pekerjaan Anda di situs web streaming video, Anda diminta untuk membangun aplikasi bernama RestfulReading , yang akan memungkinkan pengguna untuk melacak buku-buku yang mereka baca / baca.
+
+Tugas Anda adalah membuat Bookkelas, dan mengisi database pengembangan dengan tiga atau empat buku untuk memastikan antarmuka berfungsi dengan baik - Anda akan bekerja dengan Book.jsfile yang disediakan .
+
+Kelas Buku harus memiliki bidang-bidang berikut:
+
+title- string- judul buku
+author- string- penulis buku
+description- string- deskripsi buku
+pages- number- total jumlah halaman
+currentPage- nomor - halaman tempat pengguna saat ini (antara 1 dan pages)
+read- boolean- apakah pengguna telah membaca buku atau tidak (default: false)
+The Bookkelas juga harus memiliki metode contoh berikut:
+
+readBook(page)
+memungkinkan pengguna untuk mengatakan halaman mana mereka saat ini
+jika pageargumen kurang dari satu atau lebih dari jumlah total halaman buku, readBookharus dikembalikan0
+jika pageargumen lebih besar dari atau sama dengan 1 dan kurang dari jumlah total halaman buku, readBookharus menetapkan bidang instance currentPageke nilai yang diteruskan sebagai argumen dan kembali1
+jika pageargumennya sama dengan jumlah total halaman buku, readBookharus mengatur bidang instance currentPageke nilai yang diteruskan sebagai argumen, mengatur bidang instance readke true, dan mengembalikan1
+Setelah Anda membuat Bookkelas, Anda akan membuat setidaknya tiga instance yang valid dan menempatkannya di dalam booksArray yang diekspor . Untuk memeriksa pekerjaan Anda, segarkan browser terintegrasi: Bookinstance Anda akan terlihat di carousel antarmuka RestfulReading .
+
+Untuk menguji readBookmetode instan Anda, Anda harus mengikuti instruksi ini untuk tiga buku (tanpa menyegarkan halaman):
+
+perbarui halaman saat ini dengan halaman yang valid yang kurang dari jumlah total halaman
+perbarui halaman saat ini dengan jumlah total halaman yang tepat (buku itu harus hilang dari carousel dan muncul di daftar "Baca")
+Setelah Anda mencapai ini, browser Anda akan menampilkan peringatan yang berisi satu kata. Kata itu adalah jawaban untuk satu-satunya pertanyaan dalam kuis!
